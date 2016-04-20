@@ -52,10 +52,10 @@ bool thethingsiOClient_ti::isGeo(double lon, double lat) {
 }
 
 String thethingsiOClient_ti::geoJSON(double lon, double lat) {
- //   String lats = (String)lat;
+  //  String lats = (String)lat;
  //   while (lats.length() < 7) lats.concat("0");
  //   if (lats.length() > 7) lats = lats.substring(0,6);
-    return ""; //\"geo\":{\"lat\":" + String(lat, 7) + ",\"long\":" + String(lon, 7) + "}";
+    return "";//geo\":{\"lat\":" + String(lat, 7) + ",\"long\":" + String(lon, 7) + "}";
 }
 
 void thethingsiOClient_ti::addValue(String key, String value, double lon, double lat) {
