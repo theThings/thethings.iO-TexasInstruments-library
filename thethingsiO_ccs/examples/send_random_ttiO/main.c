@@ -7,11 +7,8 @@ int main()
 	 */
     // Board Initialization
     BoardInit();
-    // Configure the pinmux settings for the peripherals exercised
-    PinMuxConfig();
     // Configuring UART
     InitTerm();
-    InitializeAppVariables();
 
     // Connect to AP
     // Put your SSID and password in common.h
