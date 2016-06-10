@@ -5,7 +5,7 @@
 
 <h2>Instructions</h2>
 
-There are two folders. In the library folder you can find the library for Code Composer Studio. To use it download the thethingsiO_ti_css.zip file. Then in Code Composer Studio go to 'Project' -> 'Import CSS Project...'. In the windows that will open choose 'Select Archive File', then 'Browse' and navigate to the .zip file you just downloaded, select it click on 'Open'. After that, 'thethingsiO_lib' should appear as discovered project. Mark it and click 'Finish' to import.
+There are two folders. In the library folder you can find the library for Code Composer Studio. To use it download the thethingsiO_ti_css.zip file. Then, in Code Composer Studio go to 'Project' -> 'Import CSS Project...'. In the windows that will open choose 'Select Archive File', then 'Browse' and navigate to the .zip file you just downloaded, select it and click on 'Open'. After that, 'thethingsiO_lib' should appear as discovered project. Mark it and click 'Finish' to import.
 
 This procedure is the same for the examples in the examples folder.
 

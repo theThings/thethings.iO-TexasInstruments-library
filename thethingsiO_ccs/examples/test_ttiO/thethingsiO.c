@@ -828,7 +828,8 @@ char *HTTPActivate(HTTPCli_Handle httpClient, char *activation_code)
 	if (strlen(t) == 1){
 		UART_PRINT("Wrong Activation code...");
 		UART_PRINT("\n\r");
-		LOOP_FOREVER();
+		LOOP_FOREVER();;
+		return "";
 	}
 	int len = q - t;
 	char *tt = (char*)malloc(len+1);
