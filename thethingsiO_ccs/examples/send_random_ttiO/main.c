@@ -45,15 +45,16 @@ int main()
     // and activate the thing (uncomment the following line)
     // char *token = thing_activate(&thing, act_code);
 
-    /* Intializes random number generator */
-  //  time_t t;
-  //  srand((unsigned) time(&t));
     char * num;
     while(1)
     {
     	// Generate random number and write to string
-    	sprintf(num, "%d", rand() % 100);
+    	int n = rand() % 100;
+    	// sprintf(num, "%d", rand() % 100);
+    	sprintf(num, "%d", n);
+
     	// Print to terminal
+    	UART_PRINT("num: ");
     	UART_PRINT(num);
     	UART_PRINT("\n\r");
     	// Send number to thethings
