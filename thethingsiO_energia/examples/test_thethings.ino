@@ -1,20 +1,3 @@
-/*
-
- This example connects to an unencrypted Wifi network.
- Then it prints the MAC address of the Wifi BoosterPack / LaunchPad,
- the IP address obtained, and other network details.
-
- Circuit:
- * CC3200 WiFi LaunchPad or CC3100 WiFi BoosterPack
-   with TM4C or MSP430 LaunchPad
-
- created 13 July 2010
- by dlf (Metodo2 srl)
- modified 31 May 2012
- by Tom Igoe
- modified 2 July 2014
- by Noah Luskey
- */
 #ifndef __CC3200R1M1RGC__
 // Do not include SPI for CC3200 LaunchPad
 #include <SPI.h>
@@ -71,7 +54,6 @@ void setup() {
 
 void loop() {
   // check the network connection once every 10 seconds:
-  delay(10000);
   printCurrentNet();
   if (thing.available()) {
       String text = thing.read();
@@ -89,6 +71,7 @@ void loop() {
   Serial.println(thing.subscribed());
   Serial.print("Read: ");
   Serial.println(thing.read("test", 10));
+  delay(10000);
 }
 
 void printWifiData() {
