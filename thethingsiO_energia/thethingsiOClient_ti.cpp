@@ -3,7 +3,7 @@
 #define TOKEN_SIZE 43
 
 //byte thethingsiOClient_ti::server[] = {77, 73, 82, 243};
-char thethingsiOClient_ti::server[] = "api.thethings.io";
+char thethingsiOClient_ti::server[] = "api.devices.thethings.io";
 	
 thethingsiOClient_ti::thethingsiOClient_ti(Client *regular, Client *subscription) {
     this->regular_client = regular;
