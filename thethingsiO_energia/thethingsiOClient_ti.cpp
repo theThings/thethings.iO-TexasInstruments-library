@@ -100,7 +100,7 @@ bool thethingsiOClient_ti::POST(Client *client, String url, String &data) {
     client->stop();
     if (client->connected() || client->connect(server, 80)) {
         client->print("POST " + url + " HTTP/1.1\n");
-        client->print("Host: api.thethings.io\n");
+        client->print("Host: api.devices.thethings.io\n");
         client->print("Connection: close\n");
         client->print("Content-Type: application/json\n");
         client->print("Content-Length: ");
@@ -115,7 +115,7 @@ bool thethingsiOClient_ti::GET(Client *client, String &data) {
     client->flush();
     if (client->connected() || client->connect(server, 80)) {
         client->print("GET " + data + " HTTP/1.1\n");
-        client->print("Host: api.thethings.io\n");
+        client->print("Host: api.devices.thethings.io\n");
         client->print("Accept: application/json\n\n");
     }
     return client->connected();
