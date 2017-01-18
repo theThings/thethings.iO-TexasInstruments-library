@@ -17,7 +17,7 @@
 
 #define URI					"/v2/things/"
 
-#define HOST_NAME       	"api.thethings.io" //"<host name>"
+#define HOST_NAME       	"api.devices.thethings.io" //"<host name>"
 #define HOST_PORT           80
 
 #define READ_SIZE           1450
@@ -741,7 +741,7 @@ char  *readResponse_2(HTTPCli_Handle httpClient)
 	lRetVal = 0;
 
 end:
-    if(len > sizeof(g_buff) && (dataBuffer != NULL)) // TODO: para quÈ?
+    if(len > sizeof(g_buff) && (dataBuffer != NULL)) // TODO: para qu√©?
 	{
 	    free(dataBuffer);	// TODO: Pasar la responsabilidad al caller?
     }
